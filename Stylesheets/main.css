@@ -1,0 +1,45 @@
+
+.container {
+    width:100%;
+  }
+
+  .carousel-control {
+    background-image: none;
+  }
+
+  .next.left,
+  .prev.right {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .active.left,
+  .active.right {
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .img-responsive {
+      width:100%;
+    }
+
+    .col-xs-12 {
+      width:100%;
+      padding:0px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .brand-logo {
+      font-family: 'Varela Round', sans-serif;
+    }
+
+    .navbar {
+      height: 124px;
+    }
+
+    section {
+      padding: 180px 0;
+    }
