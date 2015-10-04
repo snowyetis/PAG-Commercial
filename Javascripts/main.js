@@ -13,6 +13,15 @@ $(document).ready(function () {
          // (default click behaviour)
          window.location.hash = this.hash;
        });
-
   });
+    $(".nav a").on("click", function(){
+      $(".nav").find(".active").removeClass("active");
+      $(this).parent().addClass("active");
+    });
+
+    $("#employeeTabs a").click(function (e) {
+      e.preventDefault();
+      $("li").find(".active").removeClass("active");
+      $(this).parent().addClass("active");
+    })
 });

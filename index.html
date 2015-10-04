@@ -2,36 +2,92 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="../Javascripts/modernizr.custom.70736.js"></script>
+    <script src="../Javascripts/jquery.masonry.min.js"></script>
+    <script src="../Javascripts/jquery.history.js"></script>
+    <script src="../Javascripts/js-url.min.js"></script>
+    <script src="../Javascripts/jquerypp.custom.js"></script>
+    <script src="../Javascripts/gamma.js"></script>
+    <script type="text/Javascripts">
+
+    $(function() {
+
+        var GammaSettings = {
+            // order is important!
+            viewport : [ {
+              width : 1200,
+              columns : 5
+            }, {
+              width : 900,
+              columns : 4
+            }, {
+              width : 500,
+              columns : 3
+            }, {
+              width : 320,
+              columns : 2
+            }, {
+              width : 0,
+              columns : 2
+            } ]
+        };
+      });
+
+    </script>
+    <script src="../Javascripts/main.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="../Stylesheets/main.css">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="../Javascripts/main.js"></script>
+    <link rel="stylesheet" href="../Stylesheets/style.css">
+
   </head>
   <body data-spy="scroll" data-target="navbar">
     <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="../Images/PAG-Brand.png" class="img-responsive" /></a>
+          <a class="navbar-brand" href="#Home">
+            <img src="../Images/PAG-Brand.png" class="img-responsive" />
+          </a>
           <h3 class="brand-logo">Property Advisors Group</h3>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#WhoWeAre">Who We Are</a></li>
+            <li class="active"><a href="#Home">Home</a></li>
             <li><a href="#WhatWeDo">What We Do</a></li>
-            <li><a href="#OurProperty">Our Properties</a></li>
+            <li><a href="#WhoWeAre">Who We Are</a></li>
+            <li><a href="#OurProperties">Our Properties</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-      <div id="Home" class="container">
+      <section id="Home" class="container">
         <div class="row">
           <div class="col-xs-12">
+            <div class="col-lg-12 text-center">
+              <h2>PAG Commercial</h2>
+              <hr class="star-primary">
+            </div>
+              <h3 class="headerWIndent">Property Advisors Group is dedicated to creating high-quality office environments, providing impeccable tenant services,
+              and employing rigorous management practices-all to help our clients thrive.</h2>
+            <div class="clearfix"></div>
+            <hr />
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <img src="../Images/PrprtAdv-Rockside028x12300PC.png" class="img-responsive" />
@@ -76,17 +132,306 @@
           </div>
         </div>
       </div>
-    <section id="WhoWeAre">
-        <h1>This is the who we are section.</h1>
-        <h3>Add the about us/contact us content here</h3>
-    </section>
     <section id="WhatWeDo">
-      <h1>Condense your content to make it more inticing to browse.</h1>
-      <h3>Visitors are more likely to stay on your site when your content is a
-      click away</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>What We Do</h2>
+            <hr class="star-primary">
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="../Images/RealEstateDev.jpg" class="img-responsive" alt="">
+            </a>
+            <h4>Real Estate Development</h4>
+            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="../Images/PropertyDev.jpg" class="img-responsive" alt="">
+            </a>
+            <h4>Property Management</h4>
+            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="../Images/ProjectMgmt.png" style="height:220px;" class="img-responsive" alt="">
+            </a>
+            <h4>Project Management</h4>
+            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="../Images/Acquistions.jpg" class="img-responsive" alt="">
+            </a>
+            <h4>Acquistions</h4>
+            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
+              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <section id="OurProperty">
-      <h1>Your Property Image Gallery goes here</h1>
+    <section id="WhoWeAre">
+          <div class="col-lg-12 text-center">
+            <h2>Who We Are</h2>
+            <hr class="star-primary">
+            <div class="col-sm-4 left-indent">
+              <img src="../Images/Pag-Staff.png" style="width:85%;" />
+            </div>
+            <div class="col-sm-4">
+              <ul class="nav nav-pills nav-stacked" id="employeeTabs">
+                <li role="presentation" class="active"><a data-toggle="pill" role="tab" href="#RNosan">Richard Nosan</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#GNosan">Gregory Nosan</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#KSmargiassi">Kelly Smargiassi</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#EUrban">Eli Urban</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#DBania">Dan Bania</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#BNosal">Bob Nosal</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#BNosan">Brad Nosan</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active in" id="RNosan">
+                  Richard Nosan, President
+                  <p>A lifelong Clevelander, Richard Nosan was educated at Miami University in Oxford,
+                  Ohio, and received his business training at IBM's legendary Executive School.
+                  From 1977 to 1986, he specialized in industrial sales and ran the office leasing division
+                  at Ostendorf-Morris, then the most substantial commercial real estate firm in Ohio and one of
+                  the largest of its kind in the country. In 1986 Rick left Ostendorf-Morris to pursue
+                  real estate development and investment through Property Advisors Group, which has grown thanks
+                  to his keen foresight, wide contacts, and deep knowledge of the Cleveland real estate market.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="GNosan">
+                  Gregory Nosan, Vice President
+                  An Ohio native, Gregory Nosan earned a BA from Kenyon College and a PhD
+                  at the University of Chicago. Greg’s long experience has involved complex
+                  project management at major organizations such as the Art Institute of Chicago
+                  and the University of Nebraska¬, and he brings his curiosity and appetite for
+                  challenge to his role at PAG, where he is responsible for leasing,
+                  tenant improvements, and new projects. He’s currently pursuing a professional
+                  certificate in Urban Real Estate Finance and Development at Cleveland State University’s 
+                  Maxine Goodman Levin School of Urban Affairs.
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="KSmargiassi">
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="EUrban">
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="DBania">
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="BNosal">
+                </div>
+                <div role="tabpanel" class="tab-pane fade in" id="BNosan">
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
+    <section id="OurProperties">
+      <div class="container">
+        <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Our Properties</h2>
+        <hr class="star-primary">
+      </div>
+      <div class="gamma-container gamma-loading" id="gamma-container">
+        <ul class="gamma-gallery masonry">
+          <li class="masonry-brick">
+              <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick">
+              <img src="../Images/Gallery/Property-HighPoint-Exterior2.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick">
+              <img src="../Images/Gallery/Property-HighPoint-Exterior3.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick">
+              <img src="../Images/Gallery/Property-HighPoint-Interior1.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick">
+              <img src="../Images/Gallery/Property-HighPoint-Interior2.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick">
+              <img src="../Images/Gallery/Property-HighPoint-Interior3.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick bottom-lrg">
+              <img src="../Images/Gallery/Property-Rockside-Exterior1.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+          <li class="masonry-brick bottom-lrg">
+              <img src="../Images/Gallery/Property-Rockside-Exterior2.png" />
+              <div class="gamma-description"><h3>Sky high</h3></div>
+          </li>
+            <noscript>
+              <img src="../Images/xsmall/3.jpg" alt="img01"/>
+            </noscript>
+          </div>
+      </ul>
+    </div>
+  </div>
+      <div class="gamma-overlay"></div>
+      <div class="gamma-single-view">
+        <div class="gamma-options gamma-options-single">
+          <div class="gamma-buttons">
+            <button class="gamma-btn-close"></button>
+            <button class="gamma-btn-ssplay"></button>
+          </div>
+        </div>
+        <nav class="gamma-nav">
+          <span class="gamma-prev">
+          </span>
+          <span class="gamma-next">
+          </span>
+        </nav>
+      </div>
+    </section>
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Real Estate Development</h2>
+                            <hr class="star-primary">
+                            <img src="../Images/RealEstateDev.jpg" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Property Management</h2>
+                            <hr class="star-primary">
+                            <img src="../Images/PropertyMgmt.jpg" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Project Management</h2>
+                            <hr class="star-primary">
+                            <img src="../Images/PropertyDev.jpg" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Acquisitions</h2>
+                            <hr class="star-primary">
+                            <img src="../Images/Acquistions.jpg" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <ul class="list-inline item-details">
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
 </html>
