@@ -103,7 +103,12 @@
     }
 
     hr.star-light {
-        border-color: #fff;
+      margin: 25px auto 30px;
+      padding: 0;
+      max-width: 250px;
+      border: 0;
+      border-top: solid 5px;
+      text-align: center;
     }
 
     hr.star-light:after {
@@ -128,6 +133,21 @@
 
     #WhatWeDo {
       padding: 100px 50px;
+      background: #3366CC;
+      color: #fff;
+    }
+
+    #WhatWeDo hr.star-primary {
+      padding-bottom: 40px;
+    }
+
+    #WhatWeDo hr.star-primary::after {
+        color: #fff;
+        background-color: #3366CC !important;
+    }
+
+    #WhatWeDo hr {
+      border-top: 5px solid #fff;
     }
 
     #WhatWeDo .portfolio-item {
@@ -180,6 +200,24 @@
     #WhatWeDo * {
       z-index: 2;
     }
+
+  #portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+  }
+
+  .icon-dimensions {
+    height:200px;
+    width:200px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
 
   .portfolio-modal .modal-content {
     padding: 100px 0;
@@ -274,4 +312,12 @@
 
     #OurProperties {
       padding: 300px 45px;
+    }
+
+    .show-text {
+      display: block;
+    }
+
+    .hide-text {
+      display: none;
     }

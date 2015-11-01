@@ -19,9 +19,15 @@ $(document).ready(function () {
       $(this).parent().addClass("active");
     });
 
-    $("#employeeTabs a").click(function (e) {
+    $("#employeeTabs li").click(function (e) {
       e.preventDefault();
       $("li").find(".active").removeClass("active");
       $(this).parent().addClass("active");
+
+      var elementId = $(this).find("a").attr("href");
+      var tabId = $(elementId);
+
+      console.log(tabid);
+
     })
 });
