@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="../Javascripts/modernizr.custom.70736.js"></script>
+    <script src="../Javascripts/jquery.masonry.min.js"></script>
+    <script src="../Javascripts/jquery.history.js"></script>
+    <script src="../Javascripts/js-url.min.js"></script>
+    <script src="../Javascripts/jquerypp.custom.js"></script>
+    <script src="../Javascripts/gamma.js"></script>
+    <script type="text/Javascripts">
+    $(function() {
+
+        var GammaSettings = {
+            // order is important!
+            viewport : [ {
+              width : 1200,
+              columns : 5
+            }, {
+              width : 900,
+              columns : 4
+            }, {
+              width : 500,
+              columns : 3
+            }, {
+              width : 320,
+              columns : 2
+            }, {
+              width : 0,
+              columns : 2
+            } ]
+        };
+      });
+
+    </script>
+    <script src="../Javascripts/main.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../Stylesheets/main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <!-- GammaGallery -->
+    <link rel="stylesheet" type="text/css" href="../Stylesheets/style.css"/>
+
+    <noscript><link rel="stylesheet" type="text/css" href="../Stylesheets/noJS.css"/></noscript>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="../Images/PAG-Brand.png" class="img-responsive" /></a>
+          <h3 class="brand-logo">Property Advisors Group</h3>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#WhoWeAre">Who We Are</a></li>
+            <li><a href="#WhatWeDo">What We Do</a></li>
+            <li><a href="../property.html">Our Properties</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <section>
+    <h1>Our Properties</h1>
+    <div class="gamma-container gamma-loading" id="gamma-container">
+      <ul class="gamma-gallery masonry">
+        <li class="masonry-brick">
+            <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick">
+            <img src="../Images/Gallery/Property-HighPoint-Exterior2.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick">
+            <img src="../Images/Gallery/Property-HighPoint-Exterior3.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick">
+            <img src="../Images/Gallery/Property-HighPoint-Interior1.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick">
+            <img src="../Images/Gallery/Property-HighPoint-Interior2.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick">
+            <img src="../Images/Gallery/Property-HighPoint-Interior3.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick bottom-lrg">
+            <img src="../Images/Gallery/Property-Rockside-Exterior1.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+        <li class="masonry-brick bottom-lrg">
+            <img src="../Images/Gallery/Property-Rockside-Exterior2.png" />
+            <div class="gamma-description"><h3>Sky high</h3></div>
+        </li>
+            <noscript>
+              <img src="../Images/xsmall/3.jpg" alt="img01"/>
+            </noscript>
+          </div>
+      </ul>
+      <div class="gamma-overlay"></div>
+      <div class="gamma-single-view">
+        <div class="gamma-options gamma-options-single">
+          <div class="gamma-buttons">
+            <button class="gamma-btn-close"></button>
+            <button class="gamma-btn-ssplay"></button>
+          </div>
+        </div>
+        <nav class="gamma-nav">
+          <span class="gamma-prev">
+          </span>
+          <span class="gamma-next">
+          </span>
+        </nav>
+      </div>
+    </section>
+  </body>
+</html>

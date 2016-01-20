@@ -1,19 +1,15 @@
 $(document).ready(function () {
   $("#navbar ul li a[href^='#']").on('click', function(e) {
-
-     // prevent default anchor click behavior
      e.preventDefault();
 
      // animate
      $('html, body').animate({
          scrollTop: $(this.hash).offset().top
        }, 300, function(){
-
-         // when done, add hash to url
-         // (default click behaviour)
          window.location.hash = this.hash;
        });
-  });
+     });
+
     $(".nav a").on("click", function(){
       $(".nav").find(".active").removeClass("active");
       $(this).parent().addClass("active");
@@ -27,7 +23,19 @@ $(document).ready(function () {
       var elementId = $(this).find("a").attr("href");
       var tabId = $(elementId);
 
-      console.log(tabid);
+      var clickedTab = $("div" + elementId + ".tab-pane");
+      var previousTab = $(clickedTab).prev();
+      var nextTab = $(clickedTab).next();
 
+      if ($(nextTab).hasClass("active")) {
+        $(nextTab).removeClass("active");
+        $(clickedTab).addClass("active");
+      } else if ($(previousTab).hasClass("active")) {
+        $(previousTab).removeClass("active");
+        $(clickedTab).addClass("active");
+      } else {
+        $(".tab-content").find('.tab-pane.active').removeClass("active");
+        $(clickedTab).addClass("active");
+      }
     })
 });
