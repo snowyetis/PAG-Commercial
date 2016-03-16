@@ -1,47 +1,14 @@
 
 <html>
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script src="../Javascripts/modernizr.custom.70736.js"></script>
-    <script src="../Javascripts/jquery.masonry.min.js"></script>
-    <script src="../Javascripts/jquery.history.js"></script>
-    <script src="../Javascripts/js-url.min.js"></script>
-    <script src="../Javascripts/jquerypp.custom.js"></script>
-    <script src="../Javascripts/gamma.js"></script>
-    <script type="text/Javascripts">
-
-    $(function() {
-
-        var GammaSettings = {
-            // order is important!
-            viewport : [ {
-              width : 1200,
-              columns : 5
-            }, {
-              width : 900,
-              columns : 4
-            }, {
-              width : 500,
-              columns : 3
-            }, {
-              width : 320,
-              columns : 2
-            }, {
-              width : 0,
-              columns : 2
-            } ]
-        };
-      });
-
-    </script>
-    <script src="../Javascripts/main.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../Stylesheets/main.css">
@@ -50,103 +17,107 @@
 
   </head>
   <body data-spy="scroll" data-target="navbar">
-    <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <!-- Mobile -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="visible-sm visible-xs navbar-brand brand-logo" href="#"><h4>Property Advisors Group</h4></a>
-        </div>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#Home">
-            <img src="../Images/PAG-Brand.png" class="img-responsive hidden-xs hidden-sm" />
-          </a>
-          <h3 class="hidden-xs hidden-sm brand-logo">Property Advisors Group</h3>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#Home">Home</a></li>
-            <li><a href="#WhatWeDo">What We Do</a></li>
-            <li><a href="#WhoWeAre">Who We Are</a></li>
-            <li><a href="#OurProperties">Our Properties</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-      <section id="Home" class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="col-lg-12 text-center">
-              <h2>PAG Commercial</h2>
-              <hr class="star-primary">
-            </div>
-              <h3 class="headerWIndent">Property Advisors Group is dedicated to creating high-quality office environments, providing impeccable tenant services,
-              and employing rigorous management practices-all to help our clients thrive.</h2>
-            <div class="clearfix"></div>
-            <hr />
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="../Images/PrprtAdv-Rockside028x12300PC.png" class="img-responsive" />
-                  <div class="carousel-caption">
-                    Optional Text 1
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="../Images/PrprtAdv-Rockside078x12300PC-1.png" class="img-responsive" />
-                  <div class="carousel-caption">
-                    Optional Text 2
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="../Images/PrprtAdv-Rockside108x12300PC.png" class="img-responsive" />
-                  <div class="carousel-caption">
-                    Optional Text 3
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="../Images/PrprtAdv-Rockside308x12300PC.png" class="img-responsive" />
-                  <div class="carousel-caption">
-                    Optional Text 4
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="../Images/PrprtAdv-RocksideRT318x12300PC.png" class="img-responsive" />
-                  <div class="carousel-caption">
-                    Optional Text 5
-                  </div>
-                </div>
-              </div>
-              <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+      <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Mobile -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="visible-sm visible-xs navbar-brand brand-logo" href="#"><h4>Property Advisors Group</h4></a>
           </div>
-        </div>
-      </div>
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#Home">
+              <img src="../Images/PAG-Brand.png" class="img-responsive hidden-xs hidden-sm" />
+            </a>
+            <h3 class="hidden-xs hidden-sm brand-logo">Property Advisors Group</h3>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#Home">Home</a></li>
+              <li><a href="#WhatWeDo">What We Do</a></li>
+              <li><a href="#WhoWeAre">Who We Are</a></li>
+              <li><a href="#OurProperties">Our Properties</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- <div class="container"> -->
+        <section id="Home" class="full-width">
+          <div class="row">
+            <div class="col-xs-12">
+              <!-- TODO: Add this back in an overlay container -->
+              <!-- <div class="col-lg-12 text-center">
+                <h2>PAG Commercial</h2>
+                <hr class="star-primary">
+              </div>
+              <h3 class="headerWIndent">Property Advisors Group is dedicated to creating high-quality office environments, providing impeccable tenant services,
+                and employing rigorous management practices-all to help our clients thrive.
+              </h3>
+              <div class="clearfix"></div> -->
+              <!-- <hr /> -->
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                      <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      <div class="item active">
+                        <img src="../Images/PrprtAdv-Rockside028x12300PC.png" class="img-responsive" />
+                        <div class="carousel-caption">
+                          <!-- Optional Text 1 -->
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="../Images/PrprtAdv-Rockside078x12300PC-1.png" class="img-responsive" />
+                        <div class="carousel-caption">
+                          <!-- Optional Text 2 -->
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="../Images/PrprtAdv-Rockside108x12300PC.png" class="img-responsive" />
+                        <div class="carousel-caption">
+                          <!-- Optional Text 3 -->
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="../Images/PrprtAdv-Rockside308x12300PC.png" class="img-responsive" />
+                        <div class="carousel-caption">
+                          <!-- Optional Text 4 -->
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="../Images/PrprtAdv-RocksideRT318x12300PC.png" class="img-responsive" />
+                        <div class="carousel-caption">
+                          <!-- Optional Text 5 -->
+                        </div>
+                      </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+              </div>
+            </div>
+        </section>
+      <!-- </div> -->
     <section id="WhatWeDo">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2>What We Do</h2>
-            <hr class="star-primary" style="color:white;">
+            <h2 class="spacer">What We Do</h2>
+            <!-- <hr style="color:white;" /> -->
           </div>
           <div class="col-sm-3 portfolio-item">
             <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -159,13 +130,9 @@
               <image src="/Images/Icons/home.svg" class="img-responsive icon-dimensions" />
             </a>
             <h4>Real Estate Development</h4>
-            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+            <p>In 1986 PAG conceived and developed Rockside Business
+              Point, the first flexible office-industrial buildings in suburban Cleveland’s premier
+              Rockside Road business district.</p>
           </div>
           <div class="col-sm-3 portfolio-item">
             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
@@ -178,13 +145,9 @@
               <img src="/Images/Icons/briefcase.svg" class="img-responsive icon-dimensions" />
             </a>
             <h4>Property Management</h4>
-            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-               Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+            <p>PAG’s approach has been to increase our properties’
+              revenue and the return on our investment though smart, focused management.
+            </p>
           </div>
           <div class="col-sm-3 portfolio-item">
             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
@@ -197,13 +160,10 @@
               <img src="/Images/Icons/computer-pc.svg" class="img-responsive icon-dimensions" />
             </a>
             <h4>Project Management</h4>
-            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+            <p>
+              PAG specializes in managing tenant-improvement
+              projects for clients in our own properties and throughout the region.
+            </p>
           </div>
           <div class="col-sm-3 portfolio-item">
             <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
@@ -216,28 +176,27 @@
               <img src="/Images/Icons/monocle.svg" class="img-responsive icon-dimensions" />
             </a>
             <h4>Acquistions</h4>
-            <p>Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum
-              Lrem ipsum >Lrem ipsum >Lrem ipsum  >Lrem ipsum >Lrem ipsum  >Lrem ipsum  >Lrem ipsum  >Lrem ipsum</p>
+            <p>
+              PAG has successfully developed and bought over $70
+              million of real estate, and we continue to build our portfolio by acquiring value-
+              add properties that complement and diversify our core holdings.
+            </p>
           </div>
         </div>
       </div>
     </section>
     <section id="WhoWeAre">
           <div class="col-lg-12 text-center">
-            <h2>Who We Are</h2>
-            <hr class="star-primary">
+            <h2 class="spacer">Who We Are</h2>
+            <!-- <hr class="star-primary"> -->
             <div class="col-sm-4 left-indent">
               <img src="../Images/Pag-Staff.png" style="width:85%;" />
             </div>
             <div class="col-sm-4">
               <ul class="nav nav-pills nav-stacked" id="employeeTabs">
                 <li role="presentation" class="active"><a data-toggle="pill" role="tab" href="#RNosan">Richard Nosan</a></li>
-                <li role="presentation"><a data-toggle="pill" href="#GNosan">Gregory Nosan</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#MNosan">Michael Nosan</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#GGatta">George Gatta</a></li>
                 <li role="presentation"><a data-toggle="pill" href="#KSmargiassi">Kelly Smargiassi</a></li>
                 <li role="presentation"><a data-toggle="pill" href="#EUrban">Eli Urban</a></li>
                 <li role="presentation"><a data-toggle="pill" href="#DBania">Dan Bania</a></li>
@@ -257,43 +216,50 @@
                   real estate development and investment through Property Advisors Group, which has grown thanks
                   to his keen foresight, wide contacts, and deep knowledge of the Cleveland real estate market.</p>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="GNosan">
-                  Gregory Nosan, Vice President
-                  <p>An Ohio native, Gregory Nosan earned a BA from Kenyon College and a PhD
-                  at the University of Chicago. Greg’s long experience has involved complex
-                  project management at major organizations such as the Art Institute of Chicago
-                  and the University of Nebraska¬, and he brings his curiosity and appetite for
-                  challenge to his role at PAG, where he is responsible for leasing,
-                  tenant improvements, and new projects. He’s currently pursuing a professional
-                  certificate in Urban Real Estate Finance and Development at Cleveland State University’s
-                  Maxine Goodman Levin School of Urban Affairs.</p>
+                <div role="tabpanel" class="tab-pane" id="MNosan">
+                  Michael Nosan
+                </div>
+                <div role="tabpanel" class="tab-pane" id="GGatta">
+                  George Gatta
                 </div>
                 <div role="tabpanel" class="tab-pane" id="KSmargiassi">
-                  Hi hi hih ih ih ihi h i hih i hi
+                  Kelly Smargiassi
                 </div>
                 <div role="tabpanel" class="tab-pane" id="EUrban">
+                  Eli Urban
                 </div>
                 <div role="tabpanel" class="tab-pane" id="DBania">
+                  Dan Bania
                 </div>
                 <div role="tabpanel" class="tab-pane" id="BNosal">
+                  Bob Nosal
                 </div>
                 <div role="tabpanel" class="tab-pane" id="BNosan">
+                  Brad Nosan
+                  Brad Nosan is an Associate with Newmark Grubb Knight Frank in
+                  Cleveland, Ohio and one of the exclusive leasing representatives for the PAG portfolio.
+                  Mr. Nosan brings a fresh insight to landlord representation and advocates for his clients&#39;
+                  best interests in the competitive and vibrant Cleveland market. He received his
+                  bachelor&#39;s degree in geography with a focus in urban planning and development from
+                  DePaul University and attended graduate school at Miami University for political
+                  geography.
                 </div>
               </div>
             </div>
           </div>
     </section>
     <div id="spacer" style="width:100%; height: 200px;"></div>
+    <div class="main">
     <section id="OurProperties">
       <div class="container">
         <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Our Properties</h2>
-        <hr class="star-primary">
+        <h2 class="spacer">Our Properties</h2>
+        <!-- <hr class="star-primary" /> -->
       </div>
       <div class="gamma-container gamma-loading col-xs-offset-1" id="gamma-container">
         <ul class="gamma-gallery masonry">
-          <li class="masonry-brick">
+          <li>
               <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" />
               <div class="gamma-description"><h3>Sky high</h3></div>
           </li>
@@ -329,8 +295,8 @@
               <img src="../Images/xsmall/3.jpg" alt="img01"/>
             </noscript>
           </div>
-      </ul>
-    </div>
+        </ul>
+      </div>
   </div>
       <div class="gamma-overlay"></div>
       <div class="gamma-single-view">
@@ -348,6 +314,7 @@
         </nav>
       </div>
     </section>
+  </div>
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -361,9 +328,18 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Real Estate Development</h2>
-                            <hr class="star-primary">
+                            <!-- <hr class="star-primary"> -->
                             <img src="../Images/RealEstateDev.jpg" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                              <p>In 1986 PAG conceived and
+                                developed Rockside Business Point, the first flexible office-industrial
+                                buildings in suburban Cleveland’s premier Rockside Road business
+                                district. We expanded our portfolio in this submarket by developing the
+                                five buildings that comprise the adjacent High Pointe Corporate Park,
+                                designed by award-winning architect Steven Kordalski between 1990 and
+                                2001. PAG continues to own, manage, and improve these properties and
+                                others even as we pursue new investment and development possibilities
+                                in Ohio and throughout the country.
+                              </p>
                             <ul class="list-inline item-details">
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -388,7 +364,17 @@
                             <h2>Property Management</h2>
                             <hr class="star-primary">
                             <img src="../Images/PropertyMgmt.jpg" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>
+                              PAG’s approach has been to
+                              increase our properties’ revenue and the return on our investment
+                              though smart, focused management. While we watch every expense,
+                              we’re also intensely proud of our buildings, improving them
+                              proactively and leasing them aggressively even as we focus on
+                              retaining valued tenants. Our seasoned management team is
+                              passionate about customer service and specializes in creating strong,
+                               transparent relationships with tenants that lead to mutual satisfaction
+                              and success.with tenants that lead to mutual satisfaction and success.
+                            </p>
                             <ul class="list-inline item-details">
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -413,7 +399,18 @@
                             <h2>Project Management</h2>
                             <hr class="star-primary">
                             <img src="../Images/PropertyDev.jpg" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>
+                              PAG specializes in
+                              managing tenant-improvement projects for clients in our own
+                              properties and throughout the region. Our team of expert architects,
+                              engineers, and subcontractors—many of whom have partnered with
+                              us for decades—allows us to identify our clients’ space needs, plan
+                              strategically, and work quickly to move from blueprint to final finish.
+                              Experienced project managers ensure quality construction on time,
+                              overseeing the competitive bidding process, supervising
+                              subcontractors’ work, and implementing both cost-saving measures
+                              and creative approaches to scheduling.
+                            </p>
                             <ul class="list-inline item-details">
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -438,7 +435,18 @@
                             <h2>Acquisitions</h2>
                             <hr class="star-primary">
                             <img src="../Images/Acquistions.jpg" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <p>
+                              “PAG has successfully
+                              developed and bought over $70 million of real estate, and we continue to
+                              build our portfolio by acquiring value-add properties that complement and
+                              diversify our core holdings.In recent years, we have purchased Southport
+                              Center, a 96,000 square-foot high-tech office building on Rockside Road
+                              in Valley View, Ohio; raw land in Columbus, Ohio, that has since been
+                              developed for hotel use; and a 333,600 square-foot net-lease office-
+                              laboratory in Indianapolis, Indiana. We’re currently looking to acquire
+                              class A and B office and office-flex properties with sale prices between $5
+                              and $50 million.
+                            </p>
                             <ul class="list-inline item-details">
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -448,5 +456,206 @@
             </div>
         </div>
     </div>
+
+    <script src="../Javascripts/modernizr.custom.70736.js"></script>
+    <script src="../Javascripts/jquery.masonry.min.js"></script>
+    <script src="../Javascripts/jquery.history.js"></script>
+    <script src="../Javascripts/js-url.min.js"></script>
+    <script src="../Javascripts/jquerypp.custom.js"></script>
+    <script src="../Javascripts/gamma.js"></script>
+
+    <script type="text/Javascripts">
+
+      $(function() {
+
+        var GammaSettings = {
+            // order is important!
+            viewport : [ {
+              width : 1200,
+              columns : 5
+            }, {
+              width : 900,
+              columns : 4
+            }, {
+              width : 500,
+              columns : 3
+            }, {
+              width : 320,
+              columns : 2
+            }, {
+              width : 0,
+              columns : 2
+            } ]
+        };
+
+        Gamma.init( GammaSettings, fncallback );
+
+        items = ['<li><div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350"><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div><div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div><noscript><img src="../Images/Gallery/Property-HighPoint-Exterior1.png" /></noscript></div></li>']
+
+        function fncallback() {
+					$( '#loadmore' ).show().on( 'click', function() {
+						++page;
+
+						var newitems = items[page-1]
+						if( page <= 1 ) {
+							Gamma.add( $( newitems ) );
+						}
+						if( page === 1 ) {
+							$( this ).remove();
+						}
+
+					});
+
+				}
+
+      });
+
+    </script>
+
+    <script src="../Javascripts/main.js"></script>
   </body>
 </html>
+
+
+<!-- <ul>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+  <li>
+    <div data-alt="img03" data-description="<h3>Sky high</h3>" data-max-width="1800" data-max-height="1350">
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="1000"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="700"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="300"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="200"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png" data-min-width="140"></div>
+      <div data-src="../Images/Gallery/Property-HighPoint-Exterior1.png"></div>
+      <noscript>
+        <img src="../Images/Gallery/Property-HighPoint-Exterior1.png" alt="img03"/>
+      </noscript>
+    </div>
+  </li>
+</ul> -->

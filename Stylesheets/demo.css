@@ -162,3 +162,8 @@ a {
 .loadmore:hover {
 	background: #333;
 }
+.main {
+	padding: 30px 20px 100px 20px;
+	max-width: 1580px;
+	margin: 0 auto;
+}
