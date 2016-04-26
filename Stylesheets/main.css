@@ -1,3 +1,4 @@
+
 .container-wrapper {
   position: relative;
   height: 100%;
@@ -27,6 +28,7 @@
 }
 
 .navbar .navbar-nav li a {
+    color: black !important;
     padding-top: -5px;
 }
 
@@ -35,10 +37,12 @@
 }
 
 /*Keep navbar index below modal indexes*/
+
 .navbar-default {
   position: fixed;
   z-index: 50;
-  background-color: transparent !important;
+  /*background-color: transparent !important;*/
+  background-color: #3366CC;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -57,12 +61,12 @@
     background-repeat: no-repeat;
     z-index: 10;
     bottom: 100px;
-    opacity: 55%;
+    /*opacity: 55%;*/
   }
 
   .carousel-inner > .item > .img-responsive {
-    opacity: 0.6;
-    filter: alpha(opacity=40);
+    /*opacity: 0.6;*/
+    /*filter: alpha(opacity=40);*/
     /*background: rgba(0, 0, 0, 0.5);*/
    }
 
@@ -218,6 +222,13 @@
         margin: 0 0 15px;
     }
 
+    .carousel-caption {
+      left: 20%;
+      padding-bottom: 30px;
+      right: 20%;
+      top: 185px;
+    }
+
     #WhatWeDo .portfolio-item .portfolio-link {
     display: block;
     position: relative;
@@ -234,7 +245,7 @@
       background: rgba(24,188,156,.9);
       -webkit-transition: all ease .5s;
       -moz-transition: all ease .5s;
-      transition: all ease .5s;;
+      transition: all ease .5s;
     }
 
     #WhatWeDo .portfolio-item .portfolio-link .caption:hover {
@@ -379,10 +390,39 @@
       padding: 300px 45px;
     }
 
+    .property-description {
+    	background: #fff;
+    	background: rgba(255, 255, 255, 0.6);
+    	position: absolute;
+    	top: 20px;
+    	left: 20px;
+    	bottom: 20px;
+    	right: 20px;
+    	text-align: center;
+    	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    	filter: alpha(opacity=0);
+    	opacity: 0;
+    	-webkit-transition: opacity 0.4s ease-in-out;
+    	-moz-transition: opacity 0.4s ease-in-out;
+    	-ms-transition: opacity 0.4s ease-in-out;
+    	-o-transition: opacity 0.4s ease-in-out;
+    	transition: opacity 0.4s ease-in-out;
+    }
+
+    .grid div:hover .property-description {
+    	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    	filter: alpha(opacity=80);
+    	opacity: 1;
+    }
+
     .show-text {
       display: block;
     }
 
     .hide-text {
       display: none;
+    }
+
+    .row-padding-bottom {
+      padding: 0 10px 10px 0;
     }
