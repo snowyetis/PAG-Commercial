@@ -42,7 +42,8 @@
   position: fixed;
   z-index: 50;
   /*background-color: transparent !important;*/
-  background-color: #3366CC;
+  /*background-color: #3366CC;*/
+  background-color: white;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -426,3 +427,33 @@
     .row-padding-bottom {
       padding: 0 10px 10px 0;
     }
+
+    #propertyGalleryModal {
+        width:  95%;
+        height: 100%;
+        /*position: absolute;*/
+        z-index: 10000;
+    }
+
+    #propertyGalleryModal.portfolio-modal .modal-content {
+      padding: 9px 0px 75px 0;
+      border: 0;
+      border-radius: 0;
+
+      top:auto;
+      text-align: center;
+      background-clip: border-box;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      z-index: 100;
+
+  }
+
+  .modal-dialog {
+    /*position: relative;
+    top: 90%;*/
+  }
+
+  body.modal-open {
+    overflow: visible;
+}
