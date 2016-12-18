@@ -4,9 +4,11 @@ $(document).ready(function () {
 
     navScrolling();
     navClassToggle();
-    goToByScroll
+    goToByScroll();
+    //CarouselInit();
     EmployeeTablClicks();
     GalleryClickEvents();
+    BuildPortfolioCatalogue();
 
   });
 
@@ -32,11 +34,13 @@ function navClassToggle() {
 
   function goToByScroll(id){
       // Remove "link" from the ID
-    id = id.replace("link", "");
+      if (id !== undefined) {
+        id = id.replace("link", "");
       // Scroll
-    $('html,body').animate({
-        scrollTop: $("#"+id).offset().top},
-        'slow');
+      $('html,body').animate({
+        scrollTop: $("#"+id).offset().top},'slow');
+      }
+      return false;
     }
 
 
@@ -78,3 +82,44 @@ function navClassToggle() {
       $('.modal-body #propertyText').text(modalText);
     });
   }
+
+  function  BuildPortfolioCatalogue() {
+
+      $.getJSON('/data/image.json', function(data) {
+        $.each(data.properties, function(i,d) {
+
+          $('<div class="grid-sizer col-xs-4 row-padding-bottom"><div class="grid-item col-xs-12">' +
+            '<div class="grid-item-content"><div class="defer-image is-loading"><div data-src=' + d.url + ' class="img"></div></div>' +
+            '<div class="property-description"data-img="Property-HighPoint-Exterior1.png" data-text="Property Description">' +
+            '<h3>'+ d.caption  + '</h3></div></div></div>').appendTo('#propertyGrid');
+          });
+      });
+
+      // Call Image Manager to load new images.
+      // $.getScript( "/Javascripts/image-manager.js", function( data, textStatus, jqxhr ) {
+      //     console.log( data ); // Data returned
+      //     data.deferImage();
+      //     console.log( textStatus ); // Success
+      //     console.log( jqxhr.status ); // 200
+      //     console.log( "Load was performed." );
+      //   });
+  }
+
+
+// Prototype
+function CarouselInit () {
+    $('.carousel .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      }
+      else {
+        $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+  });
+}

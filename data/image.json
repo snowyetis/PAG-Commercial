@@ -1,0 +1,40 @@
+{
+  "properties": [
+    {
+      "url" : "\/Images\/Gallery\/Property-Rockside-Exterior3.png",
+      "caption" : "Image 1"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-Rockside-Exterior4.png",
+      "caption" : "Image 2"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-SouthPort-Exterior1.png",
+      "caption" : "Image 3"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-SouthPort-Exterior2.png",
+      "caption" : "Image 4"
+    },
+    {
+      "url" : "\/Images/Gallery\/Property-SouthPort-Interior1.png",
+      "caption" : "Image 5"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-SouthPort-Interior2.png",
+      "caption" : "Image 6"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-SouthPort-Interior3.png",
+      "caption" : "Image 7"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-Rockside-Exterior3.png",
+      "caption" : "Image 8"
+    },
+    {
+      "url" : "\/Images\/Gallery\/Property-Rockside-Exterior3.png",
+      "caption" : "Image 9"
+    }
+  ]
+}

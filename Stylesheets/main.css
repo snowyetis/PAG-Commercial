@@ -116,6 +116,7 @@
 
     section.main {
       padding: 180px 0;
+      width: 100%;
     }
 
     section.full-width {
@@ -189,6 +190,14 @@
 
     .spacer {
       margin: 0px 0px 35px 0;
+    }
+
+    .pa-backdrop {
+      background: white;
+      width:100%;
+      height:850px;
+      display: block;
+      z-index: 100;
     }
 
     #Home {
@@ -456,4 +465,20 @@
 
   body.modal-open {
     overflow: visible;
+}
+
+.property-arrow-right {
+  position: relative;
+  bottom: 750px;
+  left: 95%;
+
+}
+
+.property-arrow-left {
+  position: relative;
+  bottom: 750px;
+}
+
+.padding-top-lg {
+  padding: 150px 0 150px 0;
 }
