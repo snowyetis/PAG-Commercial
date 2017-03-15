@@ -27,6 +27,61 @@
     margin-top: 15px;
 }
 
+@media only screen and (min-width : 320px) {
+  .navbar-default .navbar-collapse,.navbar-default .navbar-form {
+      border-color: #e7e7e7;
+      position: relative;
+      z-index: 999999;
+      background: grey;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .navbar-default .navbar-collapse,.navbar-default .navbar-form {
+      border-color: #e7e7e7;
+      position: relative;
+      z-index: 999999;
+      background: grey;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .navbar-default .navbar-collapse,.navbar-default .navbar-form {
+      border-color: #e7e7e7;
+      background: transparent;
+      z-index: 0;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .navbar-default .navbar-collapse,.navbar-default .navbar-form {
+      border-color: #e7e7e7;
+      background: transparent;
+      z-index: 0;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .navbar-default .navbar-collapse,.navbar-default .navbar-form {
+      border-color: #e7e7e7;
+      background: transparent;
+      z-index: 0;
+  }
+}
+
+
+/*.navbar-default .navbar-collapse,.navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    position: relative;
+    z-index: 999999;
+    background: grey;
+}*/
+
+
 .navbar .navbar-nav li a {
     color: black !important;
     padding-top: -5px;
@@ -47,28 +102,50 @@
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-
 }
 
 .container {
-    width:100%;
+    /*width:100%;*/
   }
 
-  #myCarousel {
-    position: relative;
-    left: 0;
-    width: 100%;
-    /*height: 100%;*/
+  /*#myCarousel {*/
+    /*position: relative;*/
+    /*width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
-    z-index: 10;
-    bottom: 100px;
+     z-index: 10;*/
+    /*bottom: 100px;
+    margin: 15px 0 0 15px;*/
+    /*position: relative;
+    width: 100%;
+    height:100%;
+    background-repeat: no-repeat;
+    z-index: 10;*/
+    /*bottom: 100px;*/
+    /*margin: 15px 0 0 15px;*/
     /*opacity: 55%;*/
-  }
+  /*}*/
 
-  .carousel-inner > .item > .img-responsive {
-    /*opacity: 0.6;*/
-    /*filter: alpha(opacity=40);*/
-    /*background: rgba(0, 0, 0, 0.5);*/
+  /*.carousel-inner {
+    position: relative;
+    width: 100%;
+  }*/
+
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 95%;
+    overflow: hidden;
+}
+
+  .carousel-inner>.item>img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     min-width: 100%;
+     /*height:90%;*/
+     /*height:400px;*/
+     max-width: none;
    }
 
   .carousel-control {
@@ -80,9 +157,9 @@
 }
 
   .carousel-indicators {
-		top: 90%;
-		right: 25px;
-		z-index: 31;
+    z-index: 50;
+    position: absolute;
+    text-align: center;
 }
 
   .next.left,
@@ -193,25 +270,37 @@
     }
 
     .pa-backdrop {
-      background: white;
+      background: transparent;
       width:100%;
-      height:850px;
+      height:auto;
       display: block;
-      z-index: 100;
+      z-index: 1;
     }
 
     #Home {
       padding: 0 0 0 0;
+      /*background-color: #C8C9C7;*/
+      background: transparent;
       /*position: relative;
       top: 50px;*/
     }
 
     #WhatWeDo {
-      padding: 100px 50px;
+      padding: 150px 50px;
+      /* background: #3366CC; */
+      background: #003DA5;
+      /* background: #5BC2E7; */
+      color: #fff;
+      /* bottom: 100px; */
+      position: relative;
+
+      /*padding: 150px 50px;
       background: #3366CC;
+      background: #003DA5;
+      background: #5BC2E7;
       color: #fff;
       bottom: 100px;
-      position: relative;
+      position: relative;*/
     }
 
     #WhatWeDo hr.star-primary {
@@ -233,10 +322,22 @@
     }
 
     .carousel-caption {
-      left: 20%;
+      position: absolute;
+      top: 400px;
+      bottom: 0px;
+      display: inline-block;
+
+      /*position: absolute;
+      left:50px;
+      right:50px;
+      top:400px;
+      bottom:0px;
+      display:inline-block;*/
+      /*left: 20%;
       padding-bottom: 30px;
-      right: 20%;
-      top: 185px;
+      right: 20%;*/
+      /*bottom: 170px;*/
+      /*top: 120px;*/
     }
 
     #WhatWeDo .portfolio-item .portfolio-link {
@@ -249,10 +350,15 @@
 
     #WhatWeDo .portfolio-item .portfolio-link .caption {
       position: absolute;
-      width: 80%;
+      width: 100%;
       height: 100%;
       opacity: 0;
-      background: rgba(24,188,156,.9);
+      text-align: center;
+      vertical-align: middle;
+      /*background: rgba(24,188,156,.9);*/
+      /*background: rgba(255, 240, 0, .4);*/
+      /*background: #FFF000;*/
+      background: rgba(200, 201, 199, 0.9);
       -webkit-transition: all ease .5s;
       -moz-transition: all ease .5s;
       transition: all ease .5s;
@@ -296,6 +402,12 @@
     -moz-transition: all ease .5s;
     transition: all ease .5s;
   }
+
+  .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    /*background-color: #337ab7;*/
+    background-color: #003DA5;
+}
 
   .icon-dimensions {
     height:200px;
